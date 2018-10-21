@@ -1,4 +1,4 @@
-package com.jerrify;
+package main.java.com.jerrify;
 
 public class Jerrify2 implements JerrifyInterface<Integer> {
 
@@ -9,7 +9,7 @@ public class Jerrify2 implements JerrifyInterface<Integer> {
      * O(z)worst 2z + 1
      */
     @Override
-    public CallResult<Integer> ask(final CallMeeseeks<Integer> meeseeks, final Integer z) {
+    public CallResult<Integer> invent(final CallMeeseeks<Integer> meeseeks, final Integer z) {
         final CallResult<Integer> result = new CallResult<>();
         int u = 0;
         int v = z;

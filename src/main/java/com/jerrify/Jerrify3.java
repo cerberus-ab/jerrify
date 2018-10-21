@@ -1,9 +1,14 @@
-package com.jerrify;
+package main.java.com.jerrify;
 
 import java.util.function.Function;
 
 public class Jerrify3 implements JerrifyInterface<Integer> {
 
+    /**
+     * Find the max possible parameter
+     * when a function is equal to or less than a value.
+     *
+     */
     private static int bsearch(final Function<Integer, Integer> g, final int z) {
         int a = -1;
         int b = z + 1;
@@ -23,7 +28,7 @@ public class Jerrify3 implements JerrifyInterface<Integer> {
      * O(z)worst 2 log z + m + n
      */
     @Override
-    public CallResult<Integer> ask(final CallMeeseeks<Integer> meeseeks, final Integer z) {
+    public CallResult<Integer> invent(final CallMeeseeks<Integer> meeseeks, final Integer z) {
         final CallResult<Integer> result = new CallResult<>();
         final int n = bsearch(x -> meeseeks.call(x, 0), z);
         final int m = bsearch(y -> meeseeks.call(0, y), z);

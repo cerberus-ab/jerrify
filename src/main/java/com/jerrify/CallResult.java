@@ -1,4 +1,4 @@
-package com.jerrify;
+package main.java.com.jerrify;
 
 import javafx.util.Pair;
 

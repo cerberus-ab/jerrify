@@ -1,4 +1,4 @@
-package com.jerrify;
+package main.java.com.jerrify;
 
 public class Main {
 
@@ -24,13 +24,10 @@ public class Main {
         final int z = 5_000;
 
         // the result is
-        final CallResult<Integer> result = jerrify.ask(meeseeks, z);
+        final CallResult<Integer> result = jerrify.invent(meeseeks, z);
         System.out.println(result.toString());
         System.out.printf("Total: %d\n", result.size());
         System.out.printf("Number of meeseeks getCalls: %d\n", meeseeks.getCalls());
-
     }
-
-
 
 }
