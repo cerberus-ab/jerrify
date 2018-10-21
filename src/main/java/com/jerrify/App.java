@@ -12,7 +12,7 @@ public class App {
         final CallResult<Integer> result = jerrify.invent(meeseeks, z);
         System.out.println(result.toString());
         System.out.printf("Total: %d\n", result.size());
-        System.out.printf("Number of meeseeks getCalls: %d\n", meeseeks.getCalls());
+        System.out.printf("Number of meeseeks calls: %d\n", meeseeks.getCalls());
     }
 
 }
