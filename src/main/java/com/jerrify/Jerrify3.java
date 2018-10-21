@@ -5,8 +5,8 @@ import java.util.function.Function;
 public class Jerrify3 implements JerrifyInterface<Integer> {
 
     /**
-     * Find the max possible parameter
-     * when a function is equal to or less than a value.
+     * Find the max possible point
+     * where a function is equal to or less than a value.
      *
      */
     private static int bsearch(final Function<Integer, Integer> g, final int z) {
@@ -24,8 +24,8 @@ public class Jerrify3 implements JerrifyInterface<Integer> {
     /**
      * Third version of jerrify function
      *
-     * O(z)best 2 log z + m min n
-     * O(z)worst 2 log z + m + n
+     * O(z)best = 2 log z + m min n
+     * O(z)worst = 2 log z + m + n
      */
     @Override
     public CallResult<Integer> invent(final CallMeeseeks<Integer> meeseeks, final Integer z) {

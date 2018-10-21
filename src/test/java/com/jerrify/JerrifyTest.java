@@ -29,7 +29,7 @@ public class JerrifyTest {
     @Before
     public void prepare() {
         this.jerrify0 = new Jerrify0();
-        this.jerrify = new Jerrify3();
+        this.jerrify = new Jerrify4();
     }
 
     @Parameterized.Parameters

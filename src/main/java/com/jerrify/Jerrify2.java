@@ -5,8 +5,8 @@ public class Jerrify2 implements JerrifyInterface<Integer> {
     /**
      * Second version of jerrify function
      *
-     * O(z)best z + 1
-     * O(z)worst 2z + 1
+     * O(z)best = z + 1
+     * O(z)worst = 2z + 1
      */
     @Override
     public CallResult<Integer> invent(final CallMeeseeks<Integer> meeseeks, final Integer z) {
