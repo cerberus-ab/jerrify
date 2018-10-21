@@ -28,4 +28,22 @@ public class CallResult<T> {
                 .map(pair -> String.format("(%s, %s)", pair.getKey(), pair.getValue()))
                 .collect(Collectors.joining("\n"));
     }
+
+    @Override
+    public boolean equals(final Object other) {
+        if (other == this) {
+            return true;
+        }
+        if (other instanceof CallResult<?>) {
+            if (((CallResult<?>)other).pairs.equals(pairs)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return pairs.hashCode();
+    }
 }

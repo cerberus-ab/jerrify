@@ -13,7 +13,7 @@ public class Jerrify1 implements JerrifyInterface<Integer> {
         final int min = meeseeks.call(0, 0);
         for (int x = 0; x <= z - min; x += 1) {
             for (int y = 0; y <= z - x - min; y += 1) {
-                if (meeseeks.call(x, y) == z) {
+                if (meeseeks.call(x, y).equals(z)) {
                     result.add(x, y);
                 }
             }

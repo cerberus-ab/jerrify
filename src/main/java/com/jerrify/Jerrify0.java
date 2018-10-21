@@ -12,7 +12,7 @@ public class Jerrify0 implements JerrifyInterface<Integer> {
         final CallResult<Integer> result = new CallResult<>();
         for (int x = 0; x <= z; x += 1) {
             for (int y = 0; y <= z; y += 1) {
-                if (meeseeks.call(x, y) == z) {
+                if (meeseeks.call(x, y).equals(z)) {
                     result.add(x, y);
                 }
             }
