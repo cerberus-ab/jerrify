@@ -5,16 +5,16 @@ import java.util.function.BiFunction;
 public class CallMeeseeks<T> {
 
     private int calls;
-    private final BiFunction<T, T, T> meeseeks;
+    private final BiFunction<T, T, T> function;
 
-    public CallMeeseeks(final BiFunction<T, T, T> meeseeks) {
+    public CallMeeseeks(final BiFunction<T, T, T> function) {
         this.calls = 0;
-        this.meeseeks = meeseeks;
+        this.function = function;
     }
 
     public T call(final T x, final T y) {
         this.calls += 1;
-        return meeseeks.apply(x, y);
+        return function.apply(x, y);
     }
 
     public int getCalls() {
