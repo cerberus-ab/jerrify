@@ -22,3 +22,19 @@ As examples of such function, might be considered:
 
 ## Implementations
 [The initial solution](src/main/java/com/jerrify/Jerrify0.java) enumerates all possible pairs (x, y) and demands *(z + 1)^2* iterations.
+
+You can implement a new *JerrifyN* variation using the template:
+```java
+public class JerrifyN implements Jerrify<Integer> {
+
+    @Override
+    public CallResult<Integer> invent(final CallMeeseeks<Integer> meeseeks, final Integer z) {
+        final CallResult<Integer> result = new CallResult<>();
+        /* find and add via result.add(x, y) */
+        return result;
+    }
+
+}
+```
+
+And then instantiate that in [main](src/main/java/com/jerrify/App.java) for executing. To be confident with the implementation you can run [the test](src/test/java/com/jerrify/JerrifyTest.java), but before replace under testing jerrify by the new one.
