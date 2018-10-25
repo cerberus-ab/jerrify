@@ -43,8 +43,8 @@ public class JerrifyTest {
 
     @Test
     public void shouldInvent() {
-        final CallResult<Integer> result0 = jerrify0.invent(new CallMeeseeks<>(this.fn), z);
-        final CallResult<Integer> result = jerrify.invent(new CallMeeseeks<>(this.fn), z);
+        final Result<Integer> result0 = jerrify0.invent(new Meeseeks<>(this.fn), z);
+        final Result<Integer> result = jerrify.invent(new Meeseeks<>(this.fn), z);
 
         assertEquals(result0, result);
         System.out.printf("Number of options: %d\n", result.size());

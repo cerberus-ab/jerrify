@@ -8,8 +8,8 @@ public class Jerrify1 implements Jerrify<Integer> {
      * O(z)worst = (z + 1)^2 / 2 + 1
      */
     @Override
-    public CallResult<Integer> invent(final CallMeeseeks<Integer> meeseeks, final Integer z) {
-        final CallResult<Integer> result = new CallResult<>();
+    public Result<Integer> invent(final Meeseeks<Integer> meeseeks, final Integer z) {
+        final Result<Integer> result = new Result<>();
         final int min = meeseeks.call(0, 0);
         for (int x = 0; x <= z - min; x += 1) {
             for (int y = 0; y <= z - x - min; y += 1) {

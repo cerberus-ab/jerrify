@@ -9,8 +9,8 @@ public class Jerrify2 implements Jerrify<Integer> {
      * O(z)worst = 2z + 1
      */
     @Override
-    public CallResult<Integer> invent(final CallMeeseeks<Integer> meeseeks, final Integer z) {
-        final CallResult<Integer> result = new CallResult<>();
+    public Result<Integer> invent(final Meeseeks<Integer> meeseeks, final Integer z) {
+        final Result<Integer> result = new Result<>();
         int u = 0;
         int v = z;
         int value;

@@ -8,8 +8,8 @@ public class Jerrify0 implements Jerrify<Integer> {
      * O(z) = (z + 1)^2
      */
     @Override
-    public CallResult<Integer> invent(final CallMeeseeks<Integer> meeseeks, final Integer z) {
-        final CallResult<Integer> result = new CallResult<>();
+    public Result<Integer> invent(final Meeseeks<Integer> meeseeks, final Integer z) {
+        final Result<Integer> result = new Result<>();
         for (int x = 0; x <= z; x += 1) {
             for (int y = 0; y <= z; y += 1) {
                 if (meeseeks.call(x, y).equals(z)) {

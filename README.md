@@ -28,8 +28,8 @@ You can implement a new *JerrifyN* variation using the template:
 public class JerrifyN implements Jerrify<Integer> {
 
     @Override
-    public CallResult<Integer> invent(final CallMeeseeks<Integer> meeseeks, final Integer z) {
-        final CallResult<Integer> result = new CallResult<>();
+    public Result<Integer> invent(final Meeseeks<Integer> meeseeks, final Integer z) {
+        final Result<Integer> result = new Result<>();
         /* find and add via result.add(x, y) */
         return result;
     }

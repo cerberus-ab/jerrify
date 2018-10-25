@@ -2,6 +2,6 @@ package main.java.com.jerrify;
 
 public interface Jerrify<T> {
 
-    CallResult<T> invent(CallMeeseeks<T> meeseeks, T z);
+    Result<T> invent(Meeseeks<T> meeseeks, T z);
 
 }

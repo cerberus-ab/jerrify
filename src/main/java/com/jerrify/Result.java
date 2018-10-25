@@ -6,11 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class CallResult<T> {
+public class Result<T> {
 
     private final List<Pair<T, T>> pairs;
 
-    public CallResult() {
+    public Result() {
         this.pairs = new ArrayList<>();
     }
 
@@ -34,8 +34,8 @@ public class CallResult<T> {
         if (other == this) {
             return true;
         }
-        if (other instanceof CallResult<?>) {
-            if (((CallResult<?>)other).pairs.equals(pairs)) {
+        if (other instanceof Result<?>) {
+            if (((Result<?>)other).pairs.equals(pairs)) {
                 return true;
             }
         }

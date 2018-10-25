@@ -2,12 +2,12 @@ package main.java.com.jerrify;
 
 import java.util.function.BiFunction;
 
-public class CallMeeseeks<T> {
+public class Meeseeks<T> {
 
     private int calls;
     private final BiFunction<T, T, T> function;
 
-    public CallMeeseeks(final BiFunction<T, T, T> function) {
+    public Meeseeks(final BiFunction<T, T, T> function) {
         this.calls = 0;
         this.function = function;
     }

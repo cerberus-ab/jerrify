@@ -28,8 +28,8 @@ public class Jerrify3 implements Jerrify<Integer> {
      * O(z)worst = 2 log z + m + n
      */
     @Override
-    public CallResult<Integer> invent(final CallMeeseeks<Integer> meeseeks, final Integer z) {
-        final CallResult<Integer> result = new CallResult<>();
+    public Result<Integer> invent(final Meeseeks<Integer> meeseeks, final Integer z) {
+        final Result<Integer> result = new Result<>();
         final int n = bsearch(x -> meeseeks.call(x, 0), z);
         final int m = bsearch(y -> meeseeks.call(0, y), z);
         int u = 0;

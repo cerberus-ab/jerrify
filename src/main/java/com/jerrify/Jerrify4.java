@@ -31,8 +31,8 @@ public class Jerrify4 implements Jerrify<Integer> {
      * O(z) = z log z
      */
     @Override
-    public CallResult<Integer> invent(final CallMeeseeks<Integer> meeseeks, final Integer z) {
-        final CallResult<Integer> result = new CallResult<>();
+    public Result<Integer> invent(final Meeseeks<Integer> meeseeks, final Integer z) {
+        final Result<Integer> result = new Result<>();
         for (int x = 0; x <= z; x += 1) {
             final int x0 = x;
             bsearch(y -> meeseeks.call(x0, y), z).ifPresent(y -> result.add(x0, y));
