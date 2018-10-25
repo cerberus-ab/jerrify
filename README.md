@@ -37,4 +37,6 @@ public class JerrifyN implements Jerrify<Integer> {
 }
 ```
 
-And then instantiate that in [main](src/main/java/com/jerrify/App.java) for executing. To be confident with the implementation you can run [the test](src/test/java/com/jerrify/JerrifyTest.java), but before replace under testing jerrify by the new one.
+And then instantiate that in [main](src/main/java/com/jerrify/App.java) for executing. 
+
+To be confident with the implementation you may run [the test](src/test/java/com/jerrify/JerrifyTest.java), but before replace under testing jerrify by the new one.
