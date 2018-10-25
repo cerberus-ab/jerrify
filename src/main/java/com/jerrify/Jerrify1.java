@@ -1,6 +1,6 @@
 package main.java.com.jerrify;
 
-public class Jerrify1 implements JerrifyInterface<Integer> {
+public class Jerrify1 implements Jerrify<Integer> {
 
     /**
      * First version of jerrify function

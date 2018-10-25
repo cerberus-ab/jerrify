@@ -7,7 +7,7 @@ public class App {
                 x * (y + 3)
         );
         final int z = 5_000;
-        final JerrifyInterface<Integer> jerrify = new Jerrify4();
+        final Jerrify<Integer> jerrify = new Jerrify4();
 
         final CallResult<Integer> result = jerrify.invent(meeseeks, z);
         System.out.println(result.toString());

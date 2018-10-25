@@ -17,8 +17,8 @@ public class JerrifyTest {
 
     private final static int z = 5_000;
 
-    private JerrifyInterface<Integer> jerrify0; // reference jerrify
-    private JerrifyInterface<Integer> jerrify; // under testing jerrify
+    private Jerrify<Integer> jerrify0; // reference jerrify
+    private Jerrify<Integer> jerrify; // under testing jerrify
 
     private BiFunction<Integer, Integer, Integer> fn;
 

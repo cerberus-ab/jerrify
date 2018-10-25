@@ -2,7 +2,7 @@ package main.java.com.jerrify;
 
 import java.util.function.Function;
 
-public class Jerrify3 implements JerrifyInterface<Integer> {
+public class Jerrify3 implements Jerrify<Integer> {
 
     /**
      * Find the max possible point

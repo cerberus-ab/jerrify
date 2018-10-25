@@ -3,7 +3,7 @@ package main.java.com.jerrify;
 import java.util.Optional;
 import java.util.function.Function;
 
-public class Jerrify4 implements JerrifyInterface<Integer> {
+public class Jerrify4 implements Jerrify<Integer> {
 
     /**
      * Try to find the single point
